@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Table & Contact - Mexican Heat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-announcement">
+    🔥 TABLE RESERVATIONS: INSTANT ONLINE VIP TABLE BOOKING! 📅
+  </div>
+
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        <span class="logo-flame">🌶️</span> Mexican<span>Heat</span>
+      </a>
+      <nav class="nav-tabs">
+        <a href="index.html" class="nav-link"><i data-lucide="home" style="width:16px;"></i> Home</a>
+        <a href="about.html" class="nav-link"><i data-lucide="info" style="width:16px;"></i> About Us</a>
+        <a href="tacos.html" class="nav-link"><i data-lucide="flame" style="width:16px;"></i> Tacos & Bowls</a>
+        <a href="burritos.html" class="nav-link"><i data-lucide="layers" style="width:16px;"></i> Burritos & Quesadillas</a>
+        <a href="appetizers.html" class="nav-link"><i data-lucide="sparkles" style="width:16px;"></i> Appetizers & Nachos</a>
+        <a href="beverages.html" class="nav-link"><i data-lucide="glass-water" style="width:16px;"></i> Drinks & Cocktails</a>
+        <a href="chef-specials.html" class="nav-link"><i data-lucide="award" style="width:16px;"></i> Chef's Specials</a>
+        <a href="reservation.html" class="nav-link active"><i data-lucide="calendar" style="width:16px;"></i> Book Table</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="reservation.html" class="btn-reserve"><i data-lucide="utensils" style="width:16px;"></i> Reserve Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pages-container">
+    <div class="section-header">
+      <div class="section-badge"><i data-lucide="calendar" style="width:14px;"></i> VIP Table Booking</div>
+      <h2>Reserve Your <span>Fiery Experience</span></h2>
+      <p>Book your spot in advance to avoid waiting lines during weekend peak hours.</p>
+    </div>
+
+    <!-- Booking Form & Info -->
+    <div class="contact-container" style="margin-top:1.5rem;">
+      <div>
+        <h3 style="font-size: 1.8rem; margin-bottom: 1rem;">Visit Mexican Heat</h3>
+        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 2rem;">
+          Whether it's a birthday fiesta or a casual taco night, we are here to serve authentic Mexican joy!
+        </p>
+        <div style="display: flex; flex-direction: column; gap: 1.2rem;">
+          <div style="display:flex; gap: 1rem; align-items: center;">
+            <div class="info-icon-box" style="margin-bottom:0;"><i data-lucide="map-pin"></i></div>
+            <div>
+              <div style="font-weight:700; color:#fff;">Address</div>
+              <div style="color:var(--text-muted); font-size:0.9rem;">Indralok Complex, E-203, Piplod, Surat, Gujarat 395007</div>
+            </div>
+          </div>
+          <div style="display:flex; gap: 1rem; align-items: center;">
+            <div class="info-icon-box" style="margin-bottom:0;"><i data-lucide="phone"></i></div>
+            <div>
+              <div style="font-weight:700; color:#fff;">Phone Number</div>
+              <div style="color:var(--text-muted); font-size:0.9rem;">+91 98765 43210 / 022 889977</div>
+            </div>
+          </div>
+          <div style="display:flex; gap: 1rem; align-items: center;">
+            <div class="info-icon-box" style="margin-bottom:0;"><i data-lucide="clock"></i></div>
+            <div>
+              <div style="font-weight:700; color:#fff;">Opening Hours</div>
+              <div style="color:var(--text-muted); font-size:0.9rem;">Mon - Sun: 12:00 PM - 12:30 AM</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Full Name</label>
+              <input type="text" class="form-input" placeholder="e.g. Yash Patel" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Reservation Date</label>
+              <input type="date" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label>Time Slot</label>
+              <select class="form-input" style="background:#171c26; color:#fff;" required>
+                <option value="">Select Time</option>
+                <option>07:00 PM - Dinner</option>
+                <option>08:30 PM - Prime Night</option>
+                <option>10:00 PM - Late Fiesta</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Number of Guests</label>
+            <input type="number" class="form-input" min="1" max="25" value="2" required>
+          </div>
+          <button type="submit" class="btn-hero-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+            Confirm Reservation Now <i data-lucide="check-circle" style="width:18px;"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Premium Comprehensive Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <a href="index.html" class="footer-about-logo">
+          <span>🌶️ MexicanHeat</span>
+        </a>
+        <p class="footer-about-desc">
+          Crafting authentic Oaxaca & Jalisco flavors with volcanic stone-ground salsa, slow-smoked meats, and artisan tequila cocktails.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="footer-social-btn" title="Instagram"><i data-lucide="instagram" style="width:18px;"></i></a>
+          <a href="#" class="footer-social-btn" title="Facebook"><i data-lucide="facebook" style="width:18px;"></i></a>
+          <a href="#" class="footer-social-btn" title="Twitter"><i data-lucide="twitter" style="width:18px;"></i></a>
+          <a href="#" class="footer-social-btn" title="YouTube"><i data-lucide="youtube" style="width:18px;"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4><i data-lucide="compass" style="width:16px; color:var(--primary);"></i> Explore</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i data-lucide="chevron-right" style="width:14px;"></i> Home Page</a></li>
+          <li><a href="tacos.html"><i data-lucide="chevron-right" style="width:14px;"></i> Tacos & Bowls</a></li>
+          <li><a href="burritos.html"><i data-lucide="chevron-right" style="width:14px;"></i> Burritos & Quesadillas</a></li>
+          <li><a href="appetizers.html"><i data-lucide="chevron-right" style="width:14px;"></i> Appetizers & Nachos</a></li>
+          <li><a href="beverages.html"><i data-lucide="chevron-right" style="width:14px;"></i> Drinks & Cocktails</a></li>
+          <li><a href="chef-specials.html"><i data-lucide="chevron-right" style="width:14px;"></i> Chef's Specials</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4><i data-lucide="clock" style="width:16px; color:var(--primary);"></i> Hours & Info</h4>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <i data-lucide="clock"></i>
+            <div>
+              <strong style="color:#fff; display:block;">Mon – Fri:</strong>
+              11:30 AM – 11:30 PM
+            </div>
+          </li>
+          <li class="footer-contact-item">
+            <i data-lucide="flame"></i>
+            <div>
+              <strong style="color:#fff; display:block;">Sat – Sun (Fiesta):</strong>
+              11:00 AM – 01:00 AM
+            </div>
+          </li>
+          <li class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <div>Indralok Complex, E-203, Piplod, Surat, Gujarat 395007</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4><i data-lucide="sparkles" style="width:16px; color:var(--primary);"></i> Daily Salsa Promise</h4>
+        <div class="footer-salsa-box">
+          <strong>🔥 Fresh Batches Daily</strong>
+          <p>Our Mexican molcajete spicy salsa is prepared fresh every sunrise without preservatives.</p>
+        </div>
+        <div style="margin-top: 1rem;">
+          <a href="reservation.html" class="btn-reserve" style="width:100%; justify-content:center;">
+            <i data-lucide="calendar" style="width:16px;"></i> Book a Table
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Mexican Heat Restaurant. Handcrafted Mexican Cuisine & Spicy Salsa.</div>
+      <div class="footer-bottom-badge">
+        <span>🌶️ Made with 100% Authentic Mexican Heritage</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
